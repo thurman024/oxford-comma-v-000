@@ -5,7 +5,7 @@ def oxford_comma(array)
   array.each_with_index do |entry, index|
     output_string << entry + separators[index] #combine entry with comma
   end
-  
+
   # last two entries of output_string are "string" and ", "
   # move this string to the end, and replace second to last entry of output_string with "and "
   l_2 = output_string.size
